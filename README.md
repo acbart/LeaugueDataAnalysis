@@ -1,1 +1,23 @@
-# LeaugueDataAnalysis
+#### *Caleb Davis*
+
+### **Problem:**
+League of Legends is one of the largest online games in the world, and as such has an incredibly complex metagame known for its reputation of scaring away new players. Data from games is made readily available to third-party developers, and there are countless resources online that use this data to help define the meta of League of Legends. This data contains win rates of certain champions, how they perform throughout the game, win rates of certain match-ups, and many more statistics on league matches. This data defines the online meta for League that consists of which champions are performing well currently, which champions are weak, which lanes have the most influence in games, etc etc. Having a strong grasp of the metagame can give a player a significant advantage in the game.
+
+Ranked League matches use a ranking system based on a player's "elo" (a number representing the players skill based on previous matches) to balance matches. There are copious resources online that aggregate League data for the meta in high elo ranked games, however there's very few resources for lower elo games that a new player is likely to experience. The metagame in league varies significantly in different ranks, as the player skill in these ranks defines much of the metagame. For example, a champ that has a low win rate in high elo might actually have a significantly higher win rate in lower elos. A large portion of data analytics for League of Legends games and the guides based on said data our irrelevant to new players and do nothing but scare players from learning the game by overwhelming them with useless information for their ranks. These new players need their own user-friendly and easy to understand data to learn about the game from.
+
+
+### **Questions:**
+1. What are some significantly different statistics in lower elo queue versus higher elo queue? How might some of these statistics be used to a new players advantage? For example, a player can learn to predict when an enemy player will go to a certain objective based on the average time it takes for their champion to clear the jungle in their elo. iPlots comparing statistics between elos will show new players what will work best in their games in a much more inviting format than a bunch of statistics in a table.
+2. Which champs have a significantly lower win rate in lower elo queue? These champs might be harder to master, or they might be less useful in most lower elo games. Using python, I'd like to sort champs for several different elos and team comps to recommend champions for new players, along with displaying their counters and synergies.
+3. What objectives in the game seem to lead to victory? For example, 88% of the games where a team got the dragon soul, that team won. These are vital numbers as they show the most significant objectives in different elos. This data is also very plottable, as the frequency of objectives in different locations of the map at different times often shows where teams are struggling and excelling.
+
+### **Importance:**
+League of Legends has a massive player base, but is infamous (along with similar MOBA games like Dota 2) for scaring off new players with an overwhelming amount of information when they start learning the game. Having a resource dedicated to new players that shows important metagame statistics in a simple format would be incredibly useful to new players, showing them information that will give them a statistical advantage in their next game without overwhelming them with the irrelevant and complicated information that is used in higher elo play.
+
+### **Dataset:**
+League of Legends developer Riot has an API for their own dataset containing statistics on official ranked matches. 
+[Riot League Match API](https://developer.riotgames.com/apis#lor-match-v1)
+
+### **Ethical Concerns and Considerations:**
+If league was a "perfect" game, where every champ was balanced and there weren't constant nerfs/buffs to items each week, there would be no metagame. In a way, the metagame in League is often abusing the imperfections of the game. Players specifically try to play champs that were recently changed and stronger in the meta to get an advantage over other players. Is it really fair to abuse this sort of advantadge? This abuse often leads to periods of unenjoyable states of the meta, where certain overly strong builds or strategies are spammed game after game to the dismay of many players that are just trying to have fun.
+However, knowledge is power and this works both ways. Players may be able to abuse knowledge of overpowered builds and champs, but other players can combat this with their own knowledge of the meta as these spammed champs and builds often have their own counters if the players recognize it before the game.
